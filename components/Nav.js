@@ -3,7 +3,13 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 // Navigation bar component
-const navigationRoutes = ["home", "about", "partners", "contact"];
+const navigationRoutes = [
+  "home",
+  "about",
+  "partners",
+  "influencers",
+  "contact",
+];
 
 export default function Navbar() {
   const router = useRouter();
