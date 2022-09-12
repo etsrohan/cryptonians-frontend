@@ -10,7 +10,7 @@
     background-image: url("../public/images/neptune-logo-circle.png");
     background-repeat: no-repeat;
     background-position: center;
-    border: 5px solid #ffffff;
+    border: 5px solid #041227;
     border-radius: 80px;
     width: 80%;
     height: 500px;
@@ -45,10 +45,11 @@
   
   .social li {
     padding: 0 25px;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, filter 1s ease;
   }
   
   .social li:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    filter: hue-rotate(270deg);
   }
   

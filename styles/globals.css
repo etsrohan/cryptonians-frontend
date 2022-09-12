@@ -36,23 +36,22 @@ a {
 }
 
 .nav_item:hover {
-  color:rgb(128, 128, 128);
-  border-color: rgb(128, 128, 128);
+  color:rgb(75, 75, 75);
+  border-color: rgb(75, 75, 75);
   transform: scale(1.1);
   animation-duration: 1000ms;
 }
 
 .nav_item_active {
-	color: #ffffff;
-	border-color: #dfdfdf;
-  background-color: #041227;
+	color: rgb(75, 75, 75);
+	border-color: rgb(75, 75, 75);
 }
 
 .nav_item_active:hover {
-  color: #ffffff;
-	border-color: #000000;
-  background-color: #041227;
+  color: #041227;
+	border-color: #041227;
   transform: scale(1.1);
+  
 }
 
 .page {

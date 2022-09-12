@@ -31,54 +31,62 @@ export default function NeptuneCard() {
         <div className={styles.links}>
           <ul className={styles.social}>
             <li>
-              <Link href="https://www.instagram.com/neptune.i.o/">
-                <a target="_blank">
-                  <Image
-                    src={`/images/instagram.png`}
-                    alt={`instagram`}
-                    height={dimension}
-                    width={dimension}
-                  />
-                </a>
-              </Link>
+              <a
+                href="https://www.instagram.com/neptune.i.o/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Image
+                  src={`/images/instagram.png`}
+                  alt={`instagram`}
+                  height={dimension}
+                  width={dimension}
+                />
+              </a>
             </li>
             <li>
-              <Link href="https://t.me/+sLt8uJfcYulhZjQx">
-                <a target="_blank">
-                  <Image
-                    src={`/images/telegram.png`}
-                    alt={`telegram`}
-                    height={dimension}
-                    width={dimension}
-                  />
-                </a>
-              </Link>
+              <a
+                href="https://t.me/+sLt8uJfcYulhZjQx"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Image
+                  src={`/images/telegram.png`}
+                  alt={`telegram`}
+                  height={dimension}
+                  width={dimension}
+                />
+              </a>
             </li>
           </ul>
           <ul className={styles.social}>
             <li>
-              <Link href={`/`}>
-                <a target="_blank">
-                  <Image
-                    src={`/images/twitter.png`}
-                    alt={`twitter`}
-                    height={dimension}
-                    width={dimension}
-                  />
-                </a>
-              </Link>
+              <a
+                href="https://twitter.com/therock"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={`/images/twitter.png`}
+                  alt={`twitter`}
+                  height={dimension}
+                  width={dimension}
+                />
+              </a>
             </li>
             <li>
-              <Link href="https://www.youtube.com/c/TheCryptonians_">
-                <a target="_blank">
-                  <Image
-                    src={`/images/youtube.png`}
-                    alt={`youtube`}
-                    height={dimension}
-                    width={dimension}
-                  />
-                </a>
-              </Link>
+              <a
+                href="https://www.youtube.com/c/TheCryptonians_"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Image
+                  src={`/images/youtube.png`}
+                  alt={`youtube`}
+                  height={dimension}
+                  width={dimension}
+                />
+              </a>
             </li>
           </ul>
         </div>
