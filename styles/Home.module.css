@@ -104,6 +104,28 @@
   color: #82C9D9;
 }
 
+.links {
+  align-items: center;
+  float: right;
+  padding: 100px 50px;
+}
+
+.social {
+  list-style-type: none;
+  padding: 10px 10px;
+	display: flex;
+	align-items: center;
+}
+
+.social li {
+  padding: 0 25px;
+  transition: transform 0.5s ease;
+}
+
+.social li:hover {
+  transform: scale(1.1);
+}
+
 
 .logo {
   height: em;
