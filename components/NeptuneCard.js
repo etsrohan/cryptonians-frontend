@@ -23,7 +23,7 @@ export default function NeptuneCard() {
 
   return (
     <>
-      <div className={styles.card}>
+      <div id="home" className={styles.card}>
         <h2>
           We Are <br />
           <span ref={word} />

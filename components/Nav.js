@@ -19,7 +19,7 @@ export default function Navbar() {
         return (
           <NavigationLink
             key={singleRoute}
-            href={`/${singleRoute}`}
+            href={`#${singleRoute}`}
             text={singleRoute}
             router={router}
           />
@@ -30,6 +30,7 @@ export default function Navbar() {
 }
 
 function NavigationLink({ href, text, router }) {
+  if (href === "#home") href = "/";
   const isActive = router.asPath === (href === "/home" ? "/" : href);
   return (
     <Link href={href === "/home" ? "/" : href} passHref>
