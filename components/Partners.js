@@ -5,27 +5,17 @@ const partnersArray = [
   "placeholder-logo",
   "placeholder-logo",
   "placeholder-logo",
-  "placeholder-logo",
-  "placeholder-logo",
-  "placeholder-logo",
+  "placeholder-logo2",
+  "placeholder-logo2",
+  "placeholder-logo2",
 ];
 
 function Partners() {
   return (
-    <div data-aos="fade-up" id="partners" className={styles.container}>
-      <ul>
-        {partnersArray.map((partner) => {
-          return (
-            <ImageList
-              key={partner}
-              src={partner}
-              alt={partner}
-              width={363}
-              height={75}
-            />
-          );
-        })}
-      </ul>
+    <div id="partners" className={styles.container}>
+      {partnersArray.map((partner) => {
+        return <ImageList key={partner} src={partner} alt={partner} />;
+      })}
     </div>
   );
 }
@@ -33,14 +23,15 @@ function Partners() {
 function ImageList({ src, alt }) {
   return (
     <>
-      <li>
+      <div>
         <Image
           src={`/images/${src}.png`}
           alt={`${alt}`}
           width={363}
           height={75}
+          objectFit="contain"
         />
-      </li>
+      </div>
     </>
   );
 }
