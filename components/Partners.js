@@ -2,12 +2,12 @@ import styles from "../styles/Partners.module.css";
 import Image from "next/image";
 
 const partnersArray = [
-  "placeholder-logo",
-  "placeholder-logo",
-  "placeholder-logo",
-  "placeholder-logo2",
-  "placeholder-logo2",
-  "placeholder-logo2",
+  "placeholder-logo.png",
+  "placeholder-logo.png",
+  "placeholder-logo.png",
+  "placeholder-logo2.png",
+  "placeholder-logo2.png",
+  "placeholder-logo2.png",
 ];
 
 function Partners() {
@@ -25,7 +25,7 @@ function ImageList({ src, alt }) {
     <>
       <div>
         <Image
-          src={`/images/${src}.png`}
+          src={`/images/${src}`}
           alt={`${alt}`}
           width={363}
           height={75}
