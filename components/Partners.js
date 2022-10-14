@@ -13,8 +13,14 @@ const partnersArray = [
 function Partners() {
   return (
     <div id="partners" className={styles.container}>
-      {partnersArray.map((partner) => {
-        return <ImageList key={partner} src={partner} alt={partner} />;
+      {partnersArray.map((partner, index) => {
+        return (
+          <ImageList
+            key={index + partner}
+            src={partner}
+            alt={index + partner}
+          />
+        );
       })}
     </div>
   );
