@@ -4,7 +4,7 @@ import Image from "next/image";
 function Influencers() {
   const imageArray = [
     "/images/Cryptonians.png",
-    "/images/uncovered-crypto.png",
+    "/images/uncovered-crypto.jpg",
     "/images/mavii.png",
     "/images/Cryptonians.png",
   ];
@@ -21,7 +21,7 @@ function Influencers() {
                 alt={index}
                 width={500}
                 height={500}
-                layout="fixed"
+                layout="intrinsic"
               />
             );
           })}
