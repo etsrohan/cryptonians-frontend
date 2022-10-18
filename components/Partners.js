@@ -2,15 +2,17 @@ import styles from "../styles/Partners.module.css";
 import Image from "next/image";
 
 const partnersArray = [
-  "placeholder-logo.png",
-  "placeholder-logo.png",
-  "placeholder-logo.png",
-  "placeholder-logo2.png",
-  "placeholder-logo2.png",
-  "placeholder-logo2.png",
+  "ottowa-hospital.png",
+  "uOttowa.png",
+  "Metafinity-partner.png",
+  "senators.png",
+  "CAA.png",
+  "ontario-government.png",
 ];
 
 function Partners() {
+  const heights = [200, 363, 75, 75, 75, 75];
+  const widths = [363, 363, 363, 363, 363, 363];
   return (
     <div id="partners" className={styles.container}>
       {partnersArray.map((partner, index) => {
@@ -19,6 +21,8 @@ function Partners() {
             key={index + partner}
             src={partner}
             alt={index + partner}
+            width={widths[index]}
+            height={heights[index]}
           />
         );
       })}
@@ -26,15 +30,15 @@ function Partners() {
   );
 }
 
-function ImageList({ src, alt }) {
+function ImageList({ src, alt, width, height }) {
   return (
     <>
       <div>
         <Image
           src={`/images/${src}`}
           alt={`${alt}`}
-          width={363}
-          height={75}
+          width={width}
+          height={height}
           objectFit="contain"
         />
       </div>

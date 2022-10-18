@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const title = "About Neptune";
 const body =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+  "Helping brands with different aspects of their social media marketing strategy by deploying result-driven services   around social strategy, content production, community management, paid social advertising, influencer marketing, & more.";
 
 function About() {
   return (
@@ -15,7 +15,7 @@ function About() {
         </div>
         <div data-aos="fade-left" className={styles.column}>
           <Image
-            src={"/images/aboutus-2.jpg"}
+            src={"/images/strategy.jpg"}
             alt="aboutus-stock"
             width={688}
             height={450}

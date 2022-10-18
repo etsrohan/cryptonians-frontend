@@ -3,10 +3,10 @@ import Image from "next/image";
 
 function Influencers() {
   const imageArray = [
-    "/images/person1.jpg",
-    "/images/person2.jpg",
-    "/images/person3.jpg",
-    "/images/person1.jpg",
+    "/images/Cryptonians.png",
+    "/images/uncovered-crypto.png",
+    "/images/mavii.png",
+    "/images/Cryptonians.png",
   ];
   return (
     <div id="influencers" className={styles.container}>
@@ -20,8 +20,8 @@ function Influencers() {
                 key={index}
                 alt={index}
                 width={500}
-                height={400}
-                layout="intrinsic"
+                height={500}
+                layout="fixed"
               />
             );
           })}
