@@ -8,6 +8,12 @@ function Influencers() {
     "/images/mavii.png",
     "/images/Cryptonians.png",
   ];
+  const linkArray = [
+    "https://www.instagram.com/thecryptoniansofficial/",
+    "https://www.instagram.com/uncoveredcrypto/",
+    "https://www.instagram.com/mavii505/",
+    "https://www.instagram.com/thecryptoniansofficial/",
+  ];
   return (
     <div id="influencers" className={styles.container}>
       <h1>Meet our Influencers</h1>
@@ -15,14 +21,21 @@ function Influencers() {
         <figure className={styles.images}>
           {imageArray.map((image, index) => {
             return (
-              <Image
-                src={image}
+              <a
+                href={linkArray[index]}
+                target="_blank"
+                rel="noopener noreferrer"
                 key={index}
-                alt={index}
-                width={500}
-                height={500}
-                layout="intrinsic"
-              />
+              >
+                <Image
+                  src={image}
+                  key={index}
+                  alt={index}
+                  width={500}
+                  height={500}
+                  layout="intrinsic"
+                />
+              </a>
             );
           })}
         </figure>
