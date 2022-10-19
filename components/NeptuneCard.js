@@ -59,36 +59,6 @@ export default function NeptuneCard() {
               </a>
             </li>
           </ul>
-          <ul className={styles.social}>
-            <li>
-              <a
-                href="https://twitter.com/therock"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src={`/images/twitter.png`}
-                  alt={`twitter`}
-                  height={dimension}
-                  width={dimension}
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/c/TheCryptonians_"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <Image
-                  src={`/images/youtube.png`}
-                  alt={`youtube`}
-                  height={dimension}
-                  width={dimension}
-                />
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </>
